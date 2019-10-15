@@ -3,13 +3,13 @@
 This microservice has three endpoints which retrieve data from the edamam microservice and an additional two which retrieve data from the database.
 
 ## Visit our app on Heroku
-https://shrouded-scrubland-16029.herokuapp.com
+https://dashboard.heroku.com/apps/edamammicroservice
 
 ## Objective
 
-This group project was completed in 10 days as a requirement for Module 2 at Turing School of Software and Design.
+This paired project was completed in 7 days as a requirement for Module 4 at Turing School of Software and Design.
 
-The project was built using Rails which implements the following:
+The project was built using Node & Express. It implements the following:
 
 - consume a JSON API
 - Build an app that authenticates using OAuth
@@ -36,39 +36,18 @@ Clone down the repo
 $ git clone
 ```
 
-Install the gem packages
-```
-$ bundle install
-```
-
-Install node packages for stimulus
-```
-$ brew install node
-$ brew install yarn
-$ yarn add stimulus
-```
-
 Set up the database
 ```
-$ rake db:create
-$ rake db:migrate
-$ rake db:seed
-```
-
-Run the test suite:
-```ruby
-$ bundle exec rspec
+$ npx sequelize db:create
+$ npx sequelize db:migrate
 ```
 
 ### Technologies
-* [Stimulus](https://github.com/stimulusjs/stimulus)
-* [will_paginate](https://github.com/mislav/will_paginate)
-* [acts-as-taggable-on](https://github.com/mbleigh/acts-as-taggable-on)
-* [webpacker](https://github.com/rails/webpacker)
-* [vcr](https://github.com/vcr/vcr)
-* [selenium-webdriver](https://www.seleniumhq.org/docs/03_webdriver.jsp)
-* [chromedriver-helper](http://chromedriver.chromium.org/)
+* Sequelize
+* Node
+* Express
+* Postgres
 
 ### Versions
-* Ruby 2.4.1
-* Rails 5.2.0
+* Node ~ 11
+* Express ~ 6.0
