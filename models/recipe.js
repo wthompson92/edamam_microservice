@@ -9,9 +9,9 @@ module.exports = (sequelize, DataTypes) => {
     calories: DataTypes.FLOAT,
     totalWeight: DataTypes.FLOAT,
     totalTime: DataTypes.FLOAT,
-    // fat: DataTypes.ARRAY,
+    ingredientLines: DataTypes.STRING,
+    healthLabels: DataTypes.STRING,
     uri: DataTypes.STRING,
-    // ingredientLines: DataTypes.ARRAY
   }, {});
   Recipe.associate = function(models) {
     // associations can be defined here

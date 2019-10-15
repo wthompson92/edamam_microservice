@@ -26,9 +26,12 @@ module.exports = {
       calories: {
         type: Sequelize.FLOAT
       },
-      // fat: {
-      //   type: Sequelize.ARRAY
-      // },
+      ingredientLines: {
+        type: Sequelize.STRING
+      },
+      healthLabels: {
+        type: Sequelize.STRING
+      },
       totalWeight: {
         type: Sequelize.FLOAT
       },
@@ -38,9 +41,6 @@ module.exports = {
       totalTime: {
         type: Sequelize.FLOAT
       },
-      // ingredientLines: {
-      //   type: Sequelize.ARRAY
-      // },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
