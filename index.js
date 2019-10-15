@@ -52,7 +52,8 @@ const getRecipe = async url => {
         calories: recipe.calories,
         yield: recipe.yield,
         image: recipe.image,
-        // fat: recipe.totalDaily[:FAT],
+        ingredientLines: recipe.ingredientLines.join(),
+        healthLabels: recipe.healthLabels.join(),
         uri: recipe.uri,
         totalWeight: recipe.totalWeight,
         totalTime: recipe.totalTime,
@@ -67,6 +68,6 @@ const getRecipe = async url => {
 module.exports = {
   getAvgCalories:getAvgCalories
 }
-// getRecipe(caloriesEndpoint);
-// getRecipe(healthLabelsEndpoint);
-// getRecipe(yieldEndpoint);
+getRecipe(caloriesEndpoint);
+getRecipe(healthLabelsEndpoint);
+getRecipe(yieldEndpoint);
