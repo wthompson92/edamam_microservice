@@ -38,8 +38,8 @@ module.exports = {
       uri: {
         type: Sequelize.STRING
       },
-      totalTime: {
-        type: Sequelize.FLOAT
+      ingredients: {
+        type: Sequelize.ARRAY(Sequelize.TEXT)
       },
       createdAt: {
         allowNull: false,
