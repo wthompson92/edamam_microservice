@@ -20,9 +20,10 @@ const getRecipe = async url => {
         calories: recipe.calories,
         yield: recipe.yield,
         image: recipe.image,
+        ingredientLines: recipe.ingredientLines.join(),
+        healthLabels: recipe.healthLabels.join(),
         uri: recipe.uri,
         totalWeight: recipe.totalWeight,
-        healthLabels: recipe.healthLabels,
         source: recipe.source,
         ingredients: recipe.ingredients
       })
@@ -31,6 +32,9 @@ const getRecipe = async url => {
   }
 };
 
+module.exports = {
+  getAvgCalories:getAvgCalories
+}
 getRecipe(caloriesEndpoint);
 getRecipe(healthLabelsEndpoint);
 getRecipe(yieldEndpoint);

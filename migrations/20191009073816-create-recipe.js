@@ -26,14 +26,17 @@ module.exports = {
       calories: {
         type: Sequelize.FLOAT
       },
+      ingredientLines: {
+        type: Sequelize.STRING
+      },
+      healthLabels: {
+        type: Sequelize.STRING
+      },
       totalWeight: {
         type: Sequelize.FLOAT
       },
       uri: {
         type: Sequelize.STRING
-      },
-      healthLabels: {
-        type: Sequelize.ARRAY(Sequelize.STRING)
       },
       ingredients: {
         type: Sequelize.ARRAY(Sequelize.TEXT)
