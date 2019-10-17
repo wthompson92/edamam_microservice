@@ -44,8 +44,208 @@ Here is the format they should be in in your .env file:
 APP_KEY=<YOUR APP KEY>
 APP_ID=<YOUR APP ID>
 ```
+## Endpoints
 
-### Schema Design
+**Get all recipes in a given calorie range** 
+
+Request:
+```
+GET /api/v1/recipes/calorie_search?q=LABEL
+Content-Type: application/json
+```
+
+Response:
+```
+Body:
+[
+  {
+    "id": 1,
+    "name": "Chicken Parmesan",
+    "calories": 300,
+    "yield": 4,
+    "ingredients": [
+      {
+        "id": 1,
+        "text": "2lbs chicken"
+      },
+      {
+        "id": 2,
+        "text": "16oz marinara sauce"
+      }
+      {
+        "id": 2,
+        "text": "cilantro"
+      }
+    ]
+  }
+]
+```
+
+**Get all recipes with a given health label**
+
+Request:
+```
+GET /api/v1/recipes/health_label_search?q=500-700
+Content-Type: application/json
+```
+
+Response:
+```
+Body:
+[
+  {
+    "id": 1,
+    "name": "Chicken Parmesan",
+    "calories": 300,
+    "yield": 4,
+    "ingredients": [
+      {
+        "id": 1,
+        "text": "2lbs chicken"
+      },
+      {
+        "id": 2,
+        "text": "16oz marinara sauce"
+      }
+      {
+        "id": 2,
+        "text": "cilantro"
+      }
+    ]
+  }
+]
+```
+
+**Get all recipes with a given serving size**
+
+Request:
+```
+GET /api/v1/recipes/serving_size_search?q=4
+Content-Type: application/json
+```
+
+Response:
+```
+Body:
+[
+  {
+    "id": 1,
+    "name": "Chicken Parmesan",
+    "calories": 300,
+    "yield": 4,
+    "ingredients": [
+      {
+        "id": 1,
+        "text": "2lbs chicken"
+      },
+      {
+        "id": 2,
+        "text": "16oz marinara sauce"
+      }
+      {
+        "id": 2,
+        "text": "cilantro"
+      }
+    ]
+  }
+]
+```
+**Get average calories of all recipes**
+
+Request:
+```
+GET /api/v1/recipes/average_calories
+Content-Type: application/json
+```
+Response:
+```
+Status: 200
+Content-Type: application/json
+Body:
+{
+  "average_calories": 685
+}
+```
+
+**Sort servings by yield in descending order**
+
+Request:
+```
+GET /api/v1/recipes/order_servings
+Content-Type: application/json
+```
+Response:
+```
+Body:
+[
+  {
+    "id": 1,
+    "name": "Beef Stew",
+    "calories": 900,
+    "yield": 6,
+    "ingredients": [
+      {
+        "id": 1,
+        "text": "2lbs beef"
+      },
+      {
+        "id": 2,
+        "text": "16oz marinara sauce"
+      }
+      {
+        "id": 2,
+        "text": "cilantro"
+      }
+    ]
+  }
+]
+[
+  {
+    "id": 1,
+    "name": "Chicken Parmesan",
+    "calories": 600,
+    "yield": 4,
+    "ingredients": [
+      {
+        "id": 1,
+        "text": "2lbs chicken"
+      },
+      {
+        "id": 2,
+        "text": "16oz marinara sauce"
+      }
+      {
+        "id": 2,
+        "text": "cilantro"
+      }
+    ]
+  }
+]
+[
+  {
+    "id": 1,
+    "name": "Chicken Pasta",
+    "calories": 300,
+    "yield": 2,
+    "ingredients": [
+      {
+        "id": 1,
+        "text": "2lbs chicken"
+      },
+      {
+        "id": 2,
+        "text": "16oz marinara sauce"
+      }
+      {
+        "id": 2,
+        "text": "cilantro"
+      }
+    ]
+  }
+]
+```
+
+## Schema Design
 <a href="https://cl.ly/a649678f79b6" target="_blank"><img src="https://dzwonsemrish7.cloudfront.net/items/3V0C0O1n1O053T1r2n3C/Screen%20Shot%202019-10-15%20at%203.07.42%20PM.png" style="display: block;height: auto;width: 100%;"/></a>
 
 ## Contributors
