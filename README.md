@@ -1,6 +1,11 @@
 # edamam_microservice
 
-This microservice has three endpoints which retrieve data from the edamam microservice and an additional two which retrieve data from the database.
+This microservice is part of the [Quantified Self](https://github.com/ktsune/quantified-self
+) project and has three endpoints which retrieve data from the edamam microservice and an additional two which retrieve data from the database.
+
+View our project board here:
+
+https://github.com/ktsune/quantified-self/projects/1
 
 ## Visit our app on Heroku
 
@@ -46,7 +51,7 @@ APP_ID=<YOUR APP ID>
 ```
 ## Endpoints
 
-**Get all recipes in a given calorie range** 
+**Get all recipes in a given calorie range**
 
 Request:
 ```
