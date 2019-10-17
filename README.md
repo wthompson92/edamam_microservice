@@ -45,7 +45,7 @@ APP_KEY=<YOUR APP KEY>
 APP_ID=<YOUR APP ID>
 ```
 
-### Schema Design
+## Schema Design
 <a href="https://cl.ly/a649678f79b6" target="_blank"><img src="https://dzwonsemrish7.cloudfront.net/items/3V0C0O1n1O053T1r2n3C/Screen%20Shot%202019-10-15%20at%203.07.42%20PM.png" style="display: block;height: auto;width: 100%;"/></a>
 
 ## Contributors
