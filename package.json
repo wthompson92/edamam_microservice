@@ -20,7 +20,7 @@
     "request-promise": "^4.2.4",
     "sequelize": "^5.19.4",
     "sequelize-cli": "^5.5.1",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "supertest": "^4.0.2"
   }
 }
